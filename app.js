@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const Customer = require('./models/customer');
+const customerFunction = require('./models/customer');
 
 app.get('/', (req, res) => {
-    // código
+    customerFunction();
 })
 
 app.listen(port, ()=>{
