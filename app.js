@@ -1,10 +1,10 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const customerFunction = require('./models/customer');
+const Customer = require('./models/customer');
 
-app.get('/', (req, res) => {
-    customerFunction();
+app.post('/', () => {
+    Customer.getCustomer();
 })
 
 app.listen(port, ()=>{

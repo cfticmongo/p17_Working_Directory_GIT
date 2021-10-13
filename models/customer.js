@@ -1,5 +1,10 @@
-const Customer = () => {
+const getCustomer = () => {
     return {name: String,cif: String}
 }
 
-module.exports = {Customer};
+const setCustomer = (customer) => {
+    //
+}
+
+
+module.exports = {getCustomer, setCustomer};
